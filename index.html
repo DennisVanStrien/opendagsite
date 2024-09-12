@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/logo.png">
+                <h1>Software Developer</h1>
+            </div>
+            <div>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="vakken.html">Vakken</a>
+                    <a href="rooster.html">Rooster</a>
+                    <a href="blokken.html">Blokken</a>
+                    <a href="docenten.html">Docenten</a>
+                    <a href="versnellen.html">Versnellen</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="blok1">
+                <div id="myDiv">
+                    <h1>Wat doe je als software developer</h1>
+                    <div class="textBox">
+                        <div class="textBoxText">
+                            <p>Als software developer MBO leer je het ontwerpen, bouwen en onderhouden van software. Hier ontwikkel je je vaardigheden in programmeren, analyseren, probleemoplossend denken en samenwerken aan innovatieve IT-projecten. Heb je interesse? Kijk dan gerust rond op de site en kom een keer langs!</p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Locatie: Breda 8394TA</p>
+            <p>Mail: curio@curio.edu.com</p>
+            <p>Telefoon: +31 9482982398</p>
+            <p>&copy; Curio</p>
+        </footer>
+
+
+
+        <script>
+            function fadeIn(element, duration) {
+              let opacity = 0;
+              element.style.opacity = opacity;
+          
+              const step = 10 / duration; // Step size based on duration
+              const fadeInterval = setInterval(() => {
+                if (opacity < 1) {
+                  opacity += step;
+                  element.style.opacity = opacity;
+                } else {
+                  clearInterval(fadeInterval);
+                }
+              }, 10); // 10ms intervals for smoother animation
+            }
+          
+            // Trigger the fade-in effect
+            window.onload = function() {
+              const myDiv = document.getElementById('myDiv');
+              fadeIn(myDiv, 1000); // 1000ms = 1 second
+            }
+          </script>
+
+    </body>
+</html>
